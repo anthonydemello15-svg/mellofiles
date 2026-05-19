@@ -1,34 +1,76 @@
 <!DOCTYPE html>
+
 <html>
 
 <head>
 
 <title>MelloFiles</title>
 
+<meta name="viewport"
+content="width=device-width,initial-scale=1">
+
 <style>
 
+*{
+margin:0;
+padding:0;
+box-sizing:border-box;
+}
+
 body{
-background:#050805;
-color:white;
+
+background:
+linear-gradient(
+180deg,
+#000,
+#041104
+);
 
 font-family:Arial;
 
-display:flex;
+color:white;
 
-justify-content:center;
+}
 
-align-items:center;
+.hero{
 
-height:100vh;
+text-align:center;
 
-margin:0;
+padding:60px 20px;
+
+}
+
+.logo{
+
+width:220px;
+
+margin-bottom:25px;
+
+}
+
+.hero h1{
+
+font-size:34px;
+
+color:#00ff66;
+
+}
+
+.hero p{
+
+color:#aaa;
+
+margin-top:12px;
+
 }
 
 .container{
 
-width:90%;
+padding:25px;
 
-max-width:500px;
+max-width:600px;
+
+margin:auto;
 
 }
 
@@ -36,27 +78,39 @@ max-width:500px;
 
 display:block;
 
-background:#111;
+background:
 
-border:2px solid #00ff66;
+linear-gradient(
+145deg,
+#0d0d0d,
+#101810
+);
 
-padding:30px;
+border:
 
-margin-bottom:25px;
+2px solid #00ff66;
 
-border-radius:18px;
+padding:28px;
+
+margin-bottom:22px;
+
+border-radius:24px;
 
 text-decoration:none;
 
 color:white;
 
-text-align:center;
+box-shadow:
+
+0 0 30px
+rgba(0,255,100,.18);
 
 }
 
 .folder:hover{
 
-transform:scale(1.02);
+transform:
+translateY(-3px);
 
 }
 
@@ -66,11 +120,45 @@ color:#00ff66;
 
 margin-bottom:10px;
 
+font-size:26px;
+
 }
 
 .folder p{
 
-color:#bbb;
+color:#aaa;
+
+}
+
+.stats{
+
+display:flex;
+
+justify-content:center;
+
+gap:14px;
+
+margin-top:30px;
+
+}
+
+.box{
+
+background:#111;
+
+padding:12px 18px;
+
+border-radius:14px;
+
+}
+
+footer{
+
+text-align:center;
+
+padding:40px;
+
+color:#666;
 
 }
 
@@ -80,6 +168,32 @@ color:#bbb;
 
 <body>
 
+<section class="hero">
+
+<img
+src="logo.png"
+class="logo">
+
+<h1>MelloFiles</h1>
+
+<p>
+Choose a category
+</p>
+
+<div class="stats">
+
+<div class="box">
+🎬 Movies
+</div>
+
+<div class="box">
+📝 Subtitles
+</div>
+
+</div>
+
+</section>
+
 <div class="container">
 
 <a
@@ -87,11 +201,13 @@ href="movies.html"
 class="folder">
 
 <h2>
-📁 Movies / Series
+🎬 Movies / Series
 </h2>
 
 <p>
-Open movie download sites
+
+Browse download websites
+
 </p>
 
 </a>
@@ -101,16 +217,24 @@ href="subtitles.html"
 class="folder">
 
 <h2>
-📁 Subtitles
+📝 Subtitles
 </h2>
 
 <p>
-Open subtitle websites
+
+Find subtitle websites
+
 </p>
 
 </a>
 
 </div>
+
+<footer>
+
+MelloFiles
+
+</footer>
 
 </body>
 
