@@ -7,7 +7,7 @@
 
 <meta
 name="viewport"
-content="width=device-width,initial-scale=1">
+content="width=device-width, initial-scale=1">
 
 <style>
 
@@ -18,132 +18,95 @@ box-sizing:border-box;
 }
 
 body{
+background:#000;
+color:white;
+font-family:Arial,sans-serif;
+min-height:100vh;
+}
+
+.hero{
+text-align:center;
+padding:60px 20px 35px;
+}
+
+.logo{
+width:140px;
+height:auto;
+border-radius:20px;
+margin-bottom:18px;
+}
+
+.hero h1{
+font-size:42px;
+color:#00ff66;
+margin-bottom:8px;
+}
+
+.hero p{
+color:#888;
+}
+
+.ad-slot{
+margin:22px auto;
+padding:10px;
+display:flex;
+justify-content:center;
+overflow:hidden;
+}
+
+.container{
+max-width:700px;
+margin:auto;
+padding:20px;
+display:flex;
+flex-direction:column;
+gap:22px;
+}
+
+.folder{
+display:block;
+text-decoration:none;
 
 background:
 linear-gradient(
 180deg,
-#000,
-#041104
+#071807,
+#050505
 );
 
-font-family:Arial;
+border:2px solid #00ff66;
 
-color:white;
-
-}
-
-.hero{
-
-text-align:center;
-
-padding:50px 20px;
-
-}
-
-.logo{
-
-width:220px;
-
-max-width:80%;
-
-}
-
-.hero h1{
-
-margin-top:15px;
-
-font-size:34px;
-
-color:#00ff66;
-
-}
-
-.hero p{
-
-color:#999;
-
-margin-top:10px;
-
-}
-
-.ad{
-
-margin:25px;
-
-padding:12px;
-
-min-height:90px;
-
-border:
-
-1px solid #00ff66;
-
-background:#111;
-
-border-radius:18px;
-
-}
-
-.container{
-
-max-width:650px;
-
-margin:auto;
-
-padding:25px;
-
-}
-
-.folder{
-
-display:block;
-
-text-decoration:none;
-
-background:
-
-linear-gradient(
-145deg,
-#101010,
-#0b170b
-);
+border-radius:24px;
 
 padding:28px;
 
-margin-bottom:22px;
-
-border-radius:25px;
+transition:.25s;
 
 color:white;
 
-border:
+box-shadow:
+0 0 20px rgba(0,255,100,.08);
+}
 
-2px solid #00ff66;
-
+.folder:hover{
+transform:translateY(-4px);
+box-shadow:
+0 0 28px rgba(0,255,100,.18);
 }
 
 .folder h2{
-
 color:#00ff66;
-
-margin-bottom:8px;
-
+margin-bottom:10px;
 }
 
 .folder p{
-
 color:#999;
-
 }
 
 footer{
-
 text-align:center;
-
-padding:40px;
-
-color:#555;
-
+padding:50px;
+color:#444;
 }
 
 </style>
@@ -168,14 +131,13 @@ Movies • Series • Subtitles
 
 </section>
 
-<!-- AD 1 -->
+<!-- TOP AD -->
 
-<script>
+<div class="ad-slot">
 
 <script src="https://pl28930057.effectivecpmnetwork.com/06/22/9d/06229de6a02d0267a838b7e16ca1309b.js"></script>
 
-
-</script>
+</div>
 
 <div class="container">
 
@@ -213,14 +175,13 @@ Open subtitle websites
 
 </div>
 
-<!-- AD 2 -->
+<!-- BOTTOM AD -->
 
-<script>
+<div class="ad-slot">
 
 <script src="https://pl28938869.effectivecpmnetwork.com/1e/49/1b/1e491b0dc88b667e75a40b4474ce5ba3.js"></script>
 
-
-</script>
+</div>
 
 <footer>
 
